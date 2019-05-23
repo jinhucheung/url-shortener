@@ -1,0 +1,10 @@
+.vscode
+log/*
+tmp/**/*
+*.log
+*~
+._*
+.bundle
+*.swp
+config/database.yml
+config/service.yml

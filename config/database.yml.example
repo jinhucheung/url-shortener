@@ -1,0 +1,20 @@
+defaults: &defaults
+  adapter: mysql2
+  encoding: utf8mb4
+  collation: utf8mb4_unicode_ci
+  host: localhost
+  username: root
+  password: secure_password
+  database: url_shortner
+
+development:
+  <<: *defaults
+  database: url_shortner_development
+
+test:
+  <<: *defaults
+  database: url_shortner_test
+
+production:
+  <<: *defaults
+  database: url_shortner_production

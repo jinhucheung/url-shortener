@@ -1,0 +1,16 @@
+defaults: &defaults
+  required_host: null
+  strip_query: false
+  strip_anchor: true
+  length: 5
+  charset: alphanumcase
+  default_url: null
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
